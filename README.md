@@ -3,7 +3,8 @@
 Backpropagation  
 Reference: https://www.youtube.com/watch?v=-yhm3WdGFok
 ## Lab 2
-2048 Temporal Difference Learning
+2048 Temporal Difference Learning  
+Reference: https://github.com/moporgic/TDL2048-Demo
 ## Lab 3
 EEG Classification  
 Reference:  
