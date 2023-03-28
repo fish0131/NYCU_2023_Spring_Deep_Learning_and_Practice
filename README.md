@@ -4,3 +4,5 @@ Backpropagation
 Reference: https://www.youtube.com/watch?v=-yhm3WdGFok
 ## Lab 2
 2048 Temporal Difference Learning
+## Lab 3
+EEG Classification
