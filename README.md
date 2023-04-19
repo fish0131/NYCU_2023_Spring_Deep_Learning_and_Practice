@@ -10,3 +10,8 @@ EEG Classification
 Reference:  
 1. https://arxiv.org/pdf/1611.08024.pdf  
 2. https://towardsdatascience.com/a-basic-introduction-to-separable-convolutions-b99ec3102728
+## Lab4
+Diabetic Retinopathy Detection  
+Reference:  
+1. https://www.kaggle.com/c/diabetic-retinopathy-detection#description  
+2. https://arxiv.org/abs/1512.03385
