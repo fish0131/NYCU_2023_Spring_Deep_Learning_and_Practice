@@ -15,3 +15,8 @@ Diabetic Retinopathy Detection
 Reference:  
 1. https://www.kaggle.com/c/diabetic-retinopathy-detection#description  
 2. https://arxiv.org/abs/1512.03385
+## Lab5
+Conditional VAE For Video Prediction  
+Reference:  
+1. Vae reference code. https://github.com/pytorch/examples/tree/master/vae  
+2. Emily Denton and Rob Fergus. Stochastic video generation with a learned prior. CoRR, abs/1802.07687, 2018.
