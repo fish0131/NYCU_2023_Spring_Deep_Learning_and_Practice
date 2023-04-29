@@ -19,4 +19,5 @@ Reference:
 Conditional VAE For Video Prediction  
 Reference:  
 1. Vae reference code. https://github.com/pytorch/examples/tree/master/vae  
-2. Emily Denton and Rob Fergus. Stochastic video generation with a learned prior. CoRR, abs/1802.07687, 2018.
+2. Emily Denton and Rob Fergus. Stochastic video generation with a learned prior. CoRR, abs/1802.07687, 2018.  
+3. Diederik P Kingma and Max Welling. Auto-encoding variational bayes, 2013.
