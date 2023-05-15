@@ -20,4 +20,13 @@ Conditional VAE For Video Prediction
 Reference:  
 1. Vae reference code. https://github.com/pytorch/examples/tree/master/vae  
 2. Emily Denton and Rob Fergus. Stochastic video generation with a learned prior. CoRR, abs/1802.07687, 2018.  
-3. Diederik P Kingma and Max Welling. Auto-encoding variational bayes, 2013.
+3. Diederik P Kingma and Max Welling. Auto-encoding variational bayes, 2013.  
+## Lab 6
+Deep Q-Network and Deep Deterministic Policy Gradient  
+Reference:  
+1. DQN Tutorial: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html  
+2. Mnih, Volodymyr et al. “Playing Atari with Deep Reinforcement Learning.” ArXiv abs/1312.5602 (2013).  
+## Lab 7
+Let's play DDPM  
+Reference:  
+
