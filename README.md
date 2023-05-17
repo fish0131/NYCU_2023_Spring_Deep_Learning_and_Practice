@@ -29,4 +29,5 @@ Reference:
 ## Lab 7
 Let's play DDPM  
 Reference:  
-
+## Prove DDPM  
+More details refer to the "Prove DDPM" folder.
