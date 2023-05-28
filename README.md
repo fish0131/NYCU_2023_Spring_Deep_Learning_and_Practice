@@ -24,12 +24,12 @@ Reference:
 ## Lab 6
 Deep Q-Network and Deep Deterministic Policy Gradient  
 Reference:  
-1. DQN Tutorial: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html  
+1. DQN tutorial: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html  
 2. Mnih, Volodymyr et al. “Playing Atari with Deep Reinforcement Learning.” ArXiv abs/1312.5602 (2013).  
 ## Lab 7
 Let's play DDPM  
 Reference:  
-1. https://github.com/huggingface/diffusion-models-class/tree/main
+1. DDPM tutorial: https://huggingface.co/docs/diffusers/tutorials/basic_training
 2. https://github.com/dome272/Diffusion-Models-pytorch/tree/main YT: https://youtu.be/TBCRlnwJtZU  
 ## Prove DDPM  
 More details refer to the "Prove DDPM" folder.
