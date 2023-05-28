@@ -30,6 +30,6 @@ Reference:
 Let's play DDPM  
 Reference:  
 1. https://github.com/huggingface/diffusion-models-class/tree/main
-2. https://github.com/dome272/Diffusion-Models-pytorch/tree/main
+2. https://github.com/dome272/Diffusion-Models-pytorch/tree/main YT: https://youtu.be/TBCRlnwJtZU  
 ## Prove DDPM  
 More details refer to the "Prove DDPM" folder.
