@@ -1,0 +1,3 @@
+church_outdoor 2
+classroom 3
+conference_room 4
