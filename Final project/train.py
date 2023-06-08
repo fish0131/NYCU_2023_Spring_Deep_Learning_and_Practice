@@ -194,7 +194,7 @@ def evaluate(args, epoch, pipeline: MyDDPMPipeline, cfg_scale = None):
 
     # Save the imagespipeline
     cfg_prefix = '' if cfg_scale is None else f'cfg{cfg_scale}_'
-    save_image(image_grid, f"{args.figure_dir}/{cfg_prefix}{epoch:04d}.png")
+    save_image(image_grid, f"{args.figure_dir}/{cfg_prefix}{epoch:06d}.png")
 
     # for i, (x, class_label) in enumerate(eval_loader):
     #     real_images = x
