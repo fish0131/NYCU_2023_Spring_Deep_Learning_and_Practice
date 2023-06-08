@@ -33,3 +33,7 @@ Reference:
 2. https://github.com/dome272/Diffusion-Models-pytorch/tree/main YT: https://youtu.be/TBCRlnwJtZU  
 ## Prove DDPM  
 More details refer to the "Prove DDPM" folder.
+## Final project
+Reference:  
+1. eDiff-I: https://research.nvidia.com/labs/dir/eDiff-I/
+2. Blended-Diffusion: https://omriavrahami.com/blended-diffusion-page/
