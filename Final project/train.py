@@ -154,12 +154,14 @@ model, optimizer, train_loader, lr_scheduler = accelerator.prepare(
     model, optimizer, train_loader, lr_scheduler
 )
 
-def calculate_fid(real, fake):
-
-    real_images = real.to(device)
+def calculate_fid(loader, fake):
+    
+    # real_images = real.to(device)
     fake_images = fake.to(device)
     fid = FrechetInceptionDistance(normalize=True).to(device)
-    fid.update(real_images, real=True)
+    for x, y in eval_loader:
+        real_images = x.to(device)
+        fid.update(real_images, real=True)
     fid.update(fake_images, real=False)
 
     return float(fid.compute())
@@ -194,10 +196,10 @@ def evaluate(args, epoch, pipeline: MyDDPMPipeline, cfg_scale = None):
     cfg_prefix = '' if cfg_scale is None else f'cfg{cfg_scale}_'
     save_image(image_grid, f"{args.figure_dir}/{cfg_prefix}{epoch:04d}.png")
 
-    for i, (x, class_label) in enumerate(eval_loader):
-        real_images = x
+    # for i, (x, class_label) in enumerate(eval_loader):
+    #     real_images = x
     
-    fid_score = calculate_fid(real_images, images)
+    fid_score = calculate_fid(eval_loader, images)
 
     return fid_score
 
@@ -256,7 +258,7 @@ def train():
                 pipeline = MyDDPMPipeline(unet=accelerator.unwrap_model(model), scheduler=noise_scheduler)
 
                 if global_step % 5000 == 0 or global_step == total_iter - 1:
-                    # fid_score = evaluate(args, epoch, pipeline)
+                    fid_score = evaluate(args, epoch, pipeline)
                     pipeline.save_pretrained(args.log_dir)
                     torch.save(state, os.path.join(args.log_dir, "model_{}.pth".format(global_step)))
                     print(f"Save epoch#{epoch} model to {str(args.log_dir)}")
@@ -266,11 +268,11 @@ def train():
         print("Epoch {}/{}, loss: {}".format(epoch+1, num_epochs, losses[-1]))
 
         # After each epoch you optionally sample some demo images with evaluate() and save the model
-        if accelerator.is_main_process:
-            pipeline = MyDDPMPipeline(unet=accelerator.unwrap_model(model), scheduler=noise_scheduler)
+        # if accelerator.is_main_process:
+        #     pipeline = MyDDPMPipeline(unet=accelerator.unwrap_model(model), scheduler=noise_scheduler)
 
-            if epoch % 2 == 0 or epoch == num_epochs - 1:
-                fid_score = evaluate(args, epoch, pipeline)
+            # if epoch % 2 == 0 or epoch == num_epochs - 1:
+            # fid_score = evaluate(args, epoch, pipeline)
         
         with open('{}/train_record.txt'.format(args.log_dir), 'a') as train_record:
             train_record.write(('[Epoch: %02d] loss: %.5f | FID: %.5f | lr: %f\n' % (epoch, losses[-1], fid_score, lr_scheduler.get_last_lr()[0])))
