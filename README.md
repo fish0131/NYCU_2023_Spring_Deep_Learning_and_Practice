@@ -38,4 +38,5 @@ Our topic:
 Reference:  
 1. eDiff-I: https://research.nvidia.com/labs/dir/eDiff-I/
 2. Blended-Diffusion: https://omriavrahami.com/blended-diffusion-page/  
+
 Thanks @BlenderWang9487 and @MichaelLee-ceo
