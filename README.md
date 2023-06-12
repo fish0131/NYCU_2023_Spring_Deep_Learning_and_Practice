@@ -34,7 +34,7 @@ Reference:
 ## Prove DDPM  
 More details refer to the "Prove DDPM" folder.
 ## Final project
-Our topic:  
+Our topic: Gemini Diffusion Model Unveils Underlying Division of Denoising Process  
 Reference:  
 1. eDiff-I: https://research.nvidia.com/labs/dir/eDiff-I/
 2. Blended-Diffusion: https://omriavrahami.com/blended-diffusion-page/  
